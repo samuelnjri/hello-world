@@ -1,0 +1,135 @@
+:root {
+    --custom-blue: #183A50;
+    --custom-red: #BB616C;
+    --custom-green: #89ACAA;
+    --custom-beige: #CDBDB2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--custom-beige);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--custom-blue);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: var(--custom-red);
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+li:hover a {
+    background-color: var(--custom-red);
+    color: var(--custom-blue);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: var(--custom-green);
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--custom-green)
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: #183A50;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px var(--custom-beige);
+    transition: transform 0.3s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    animation:  shake 0.8s;
+  }
+  
+  @keyframes shake{
+    0%{
+      transform: translateX(0)
+    }
+    25%{
+      transform: translateX(25px);
+    }
+      
+    50%{
+      transform: translateX(-25px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
