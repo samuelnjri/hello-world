@@ -83,7 +83,13 @@ p {
     height: 100vh;
 }
 
-#projects {
+#p-about{
+    justify-content: center;
+    text-align: center;
+    padding: 2em 2em;
+}
+
+.project-section {
     text-align: center;
     padding: 10rem 2rem;
     background-color: #183A50;
@@ -93,16 +99,23 @@ h2 {
     font-size: 4.2rem;
 }
 
+.contact-section {
+    justify-content: center;
+	align-items: center;
+}
+
 .contact-links {
     display: flex;
     justify-content: center;
+    align-content: center;
     width: 100%;
-    max-width: 980px;
     margin-top: 4rem;
     flex-wrap: wrap;
 }
 
 .contact-details {
+    display: flex;
+    justify-content: center;
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px var(--custom-beige);
     transition: transform 0.3s ease-out;
