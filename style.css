@@ -110,6 +110,7 @@ h2 {
     align-content: center;
     width: 100%;
     margin-top: 4rem;
+    margin-bottom: 4rem;
     flex-wrap: wrap;
 }
 
@@ -146,3 +147,16 @@ h2 {
       transform: translateX(0px);
     }
   }
+
+  .footer {
+    display: flex;
+    text-align: start;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color:var(--custom-blue);
+    border-top: 4px solid var(--custom-red);
+}
+
+#footer-text {
+    color: var(--custom-green);
+}
