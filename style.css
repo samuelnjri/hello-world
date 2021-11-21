@@ -32,7 +32,7 @@ body {
 
 .nav-list a {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 2rem;
 }
 
@@ -58,7 +58,7 @@ ul {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 h1, h2 {
@@ -69,7 +69,7 @@ h1, h2 {
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
     color: var(--custom-green)
 }
@@ -83,6 +83,12 @@ p {
     height: 100vh;
 }
 
+.about-section {
+    justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+}
+
 #p-about{
     justify-content: center;
     text-align: center;
@@ -91,12 +97,12 @@ p {
 
 .project-section {
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 6rem 2rem;
     background-color: #183A50;
 }
 
 h2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
 }
 
 .contact-section {
@@ -109,15 +115,14 @@ h2 {
     justify-content: center;
     align-content: center;
     width: 100%;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     flex-wrap: wrap;
 }
 
 .contact-details {
     display: flex;
     justify-content: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-shadow: 2px 2px 1px var(--custom-beige);
     transition: transform 0.3s ease-out;
 }
@@ -159,4 +164,40 @@ h2 {
 
 #footer-text {
     color: var(--custom-green);
+}
+
+#i-arrow {
+    display: block;
+    color: var(--custom-green);
+    font-size: 8rem;
+    margin: 2rem 2rem;
+}
+
+#i-list {
+    display: block;
+    color: var(--custom-green);
+    font-size: 3rem;
+}
+
+#i-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+#i-contact a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--custom-green);
+    font-weight: 500;
+}
+
+#i-contact i {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: var(--custom-green);
+    font-weight: 500;
 }
