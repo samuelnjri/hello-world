@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div id=navbar>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>>
+  <div id="navbar">
+    <nav class="autohide navbar navbar-expand-lg navbar-dark bg-primary"></nav>>
       <ul class="nav-list">
         <li>
           <a href="#welcome-section">Home</a>
@@ -30,7 +30,7 @@
       <div class="contact-overview">
         <section class="contact-section" id="contact-section">
           <div class="contact-links">
-            <a href="https://www.linkedin.com/in/samuelnjri" class="btn contact-details"><i class="fa fa-linkedin-square"></i> </a>
+            <a href="https://www.linkedin.com/in/samuel-njri" class="btn contact-details"><i class="fa fa-linkedin-square"></i> </a>
             <a id="profile-link" href="https://github.com/samuelnjri" target="_blank" class="btn contact-details"><i class="fa fa-github"></i> </a>
             <a href="https://facebook.com/samuelnjri" target="_blank" class="btn contact-details"><i class="fa fa-facebook-square"></i> </a>
             <a href="mailto:samuel-njri@hotmail.com" class="btn contact-details"><i class="fa fa-at"></i> </a>
@@ -78,32 +78,17 @@
       </div>
     </footer>
   </div>
-</body>
-<script>
-  document.addEventListener("DOMContentLoaded", function(){
-
-  el_autohide = document.querySelector('.autohide');
-
-  // add padding-top to bady (if necessary)
-  navbar_height = document.querySelector('.navbar').offsetHeight;
-  document.body.style.paddingTop = navbar_height + 'px';
-
-  if(el_autohide){
-    var last_scroll_top = 0;
-    window.addEventListener('scroll', function() {
-          let scroll_top = window.scrollY;
-          if(scroll_top < last_scroll_top) {
-                el_autohide.classList.remove('scrolled-down');
-                el_autohide.classList.add('scrolled-up');
-            }
-            else {
-                el_autohide.classList.remove('scrolled-up');
-                el_autohide.classList.add('scrolled-down');
-            }
-            last_scroll_top = scroll_top;
-      }); 
-      // window.addEventListener
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
     }
-  });
-</script>
+  </script>
+</body>
 </html>

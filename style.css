@@ -20,27 +20,17 @@ body {
 }
 
 .nav {
-    display:inline-block;
-    vertical-align:top;
+    display:block;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
-    z-index: 10;
+    z-index: 9999;
+    transition: top 0.3s;
 }
-
-.scrolled-down{
-    transform:translateY(-100%); transition: all 0.3s ease-in-out;
-  }
-  .scrolled-up{
-    transform:translateY(0); transition: all 0.3s ease-in-out;
-  }
 
 .nav-list a {
     margin: auto;
-    vertical-align:top;
-    text-align: center;
     font-size: 1.1rem;
     padding: 3em;
     color: var(--custom-beige);
