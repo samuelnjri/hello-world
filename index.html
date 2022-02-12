@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel Njri</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
 </head>
 <body>
-  <div id="navbar">
-    <nav class="autohide navbar navbar-expand-lg navbar-dark bg-primary"></nav>>
-      <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">Home</a>
-        </li>
-        <li>
-          <a href="#about-section">About</a>
-        </li>
-        <li>
-          <a href="#project-section">Work</a>
-        </li>
-      </ul>
+  <div id="topbar">
+    <nav class="autohide navbar" id="navbar">
+      <div container-fluid>
+        <ul class="nav-list">
+          <li>
+            <a href="#welcome-section" class="text-decoration-none ">Home</a>
+          </li>
+          <li>
+            <a href="#about-section" class="text-decoration-none">About</a>
+          </li>
+          <li>
+            <a href="#project-section" class="text-decoration-none">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
   <div class="welcome">
@@ -42,7 +56,7 @@
     <section class="about-section" id="about-section">
       <h2 class="about-section-header">About me</h2>
       <p id="p-about">Creative, motivated, ambitious, open-minded, leading, learning, young man,
-        studying software engineering <a href="https://www.sdu.dk/">@sdu</a>, currently based in Denmark.</p>
+        studying software engineering <a href="https://www.sdu.dk/" class="text-decoration-none text-reset">@sdu</a>, currently based in Denmark.</p>
     </section>
   </div>
   <div class="project-overview">
@@ -78,17 +92,5 @@
       </div>
     </footer>
   </div>
-  <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-50px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  </script>
 </body>
 </html>
