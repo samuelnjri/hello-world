@@ -19,12 +19,17 @@ body {
     background-image: url('grancan.jpg');
 }
 
+#topbar {
+    width: 100vw;
+}
+
 .nav {
     display: block;
     position: fixed;
     top: 0;
     width: 100%;
     transition: top 0.3s;
+    
 }
 
 .navbar {
@@ -33,15 +38,15 @@ body {
 
 .nav-list a {
     margin: auto;
-    font-size: 1.1rem;
-    padding: 3em;
+    font-size: 1rem;
+    padding: 2em;
     color: var(--custom-beige);
 }
 
 a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 200;
     color: var(--custom-red);
 }
 
@@ -158,7 +163,7 @@ h2 {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 2px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .btn:hover {
